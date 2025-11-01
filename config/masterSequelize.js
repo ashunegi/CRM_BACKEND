@@ -12,7 +12,7 @@ const sequelize = new Sequelize(
     dialect: "mysql",
     logging: false,
     pool: {
-      max: 30, // Maximum number of connection in pool
+      max: 30,
       min: 0, // Minimum number of connection in pool
       acquire: 30000, // Maximum time, in ms, that pool will try to get connection before throwing error
       idle: 10000, // Maximum time, in ms, that a connection can be idle before being released
